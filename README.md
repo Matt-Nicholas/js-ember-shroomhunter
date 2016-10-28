@@ -1,7 +1,6 @@
 # Js-ember-messageboard
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This website is for mushroom enthusiasts to get together and share their knowledge about mushrooms.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/Matt-Nicholas/js-ember-shroomhunter` this repository
 * `cd js-ember-messageboard`
 * `npm install`
 * `bower install`
@@ -39,9 +38,22 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### BDD
+| Behavior:                                          | Input Example:                             | Output Example:                            |
+|----------------------------------------------------|--------------------------------------------|--------------------------------------------|
+| Users can ask questions                            | "Are Mushrooms Delicious?"                 |  "Are Mushrooms Delicious?"                |
+| Users can answer questions                         | "Yes!"                                     |  "Yes!"                                    |
+| Users can view questions                           | n/a                                        |  n/a                                       |
+| Users can view answers that belong to a question   | n/a                                        |  n/a                                       |
+| Users can delete questions                         | Delete                                     |  n/a                                       |
+| Users can update questions                         | Update                                     |  n/a                                       |
 
-Specify what it takes to deploy your app.
+## Support and contact details
+Matt Nicholas: fostermatt82@gmail.com
+
+
+### License
+*This site is Licensed under the MIT licensing*
 
 ## Further Reading / Useful Links
 
@@ -50,4 +62,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

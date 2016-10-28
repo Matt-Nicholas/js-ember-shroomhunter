@@ -35,6 +35,8 @@ li{
 }
 
 .daily-pic-div{
+  margin-bottom: 10px;
+
   background-color: $otherColor;
   border: 4px ridge $borderColor;
   text-align: center;
@@ -79,8 +81,38 @@ li{
     margin-bottom: 10px;
     img{
       max-width: 100%;
-      background-color: $otherColor;
       border: 4px ridge $borderColor;
     }
   }
+}
+
+.question-form-div{
+  margin-top: 10px;
+  border: 1px solid $primaryColor;
+  padding: 5px;
+  background-color: $anotherColor;
+  textarea, input{
+    min-width: 100%;
+  }
+}
+
+.answer-div{
+  border-bottom: 1px solid $anotherColor;
+  margin-bottom: 2px;
+}
+
+#answer-table-head{
+  border-bottom: 2px solid $primaryColor;
+}
+
+#delete-button{
+  width: 100px;
+  text-align: center;
+  color: darkred;
+}
+
+#update-button{
+  width: 100px;
+  text-align: center;
+  color: orange;
 }
