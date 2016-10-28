@@ -1,1 +1,16 @@
 @import "bootstrap";
+
+$primaryColor: #5F5C46;
+$secondaryColor: #E4E3DC;
+
+
+footer {
+position: fixed;
+bottom: 0;
+}
+
+.navbar{
+  border-radius: 0;
+  background-color: $primaryColor;
+  border: 0;
+}
