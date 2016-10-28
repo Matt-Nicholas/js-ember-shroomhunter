@@ -6,6 +6,11 @@ $borderColor: #EDBF85;
 $otherColor: #F8F287;
 $anotherColor: #D1CEC3;
 
+
+div{
+  border-radius: 2px;
+}
+
 .container{
   background-color: $secondaryColor;
   min-height: 100%;
@@ -22,10 +27,11 @@ bottom: 0;
   border-radius: 0;
   background-color: $primaryColor;
   border: 4px solid $primaryColor;
+  border-radius: 2px;
 }
 
 li{
-  border-left: 1px solid $secondaryColor;
+  border-left: 1px solid black;
 }
 
 .daily-pic-div{
@@ -44,8 +50,15 @@ li{
 .table-head{
   max-width: 96%;
   background-color: $anotherColor;
+  margin-left: 2%;
 }
+
 .table-data{
   max-width: 96%;
-  
+  margin-left: 2%;
+  border-bottom: 1px solid $anotherColor;
+}
+
+#title{
+  color: black;
 }

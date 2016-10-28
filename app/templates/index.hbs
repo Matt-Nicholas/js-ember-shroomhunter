@@ -17,9 +17,15 @@
             {{question-tile question=question}}
           {{/each}}
     </div>
-    <div class="daily-pic-div col-sm-4">
-      <h3>Daily Shroom</h3>
-      <img src="assets/images/chantrelles.JPG" alt="Chanterelles" />
+    <div class=" col-sm-4">
+      <div class="daily-pic-div">
+        <h3>Daily Shroom</h3>
+        <img src="assets/images/chantrelles.JPG" alt="Chanterelles" />
+      </div>
+      <div class="question-form-div">
+        {{new-question saveQuestion="saveQuestion"}}
+      </div>
     </div>
+
   </div>
 </div>
