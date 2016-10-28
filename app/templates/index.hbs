@@ -14,7 +14,7 @@
           </div>
         </div>
           {{#each model as |question|}}
-            {{question-tile question=question}}
+            {{question-tile question=question destroyQuestion="destroyQuestion"}}
           {{/each}}
     </div>
     <div class=" col-sm-4">
