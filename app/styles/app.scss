@@ -2,7 +2,14 @@
 
 $primaryColor: #5F5C46;
 $secondaryColor: #E4E3DC;
+$borderColor: #EDBF85;
+$otherColor: #F8F287;
 
+.container{
+  background-color: $secondaryColor;
+  min-height: 100%;
+  position: relative;
+}
 
 footer {
 position: fixed;
@@ -12,5 +19,21 @@ bottom: 0;
 .navbar{
   border-radius: 0;
   background-color: $primaryColor;
-  border: 0;
+  border: 4px solid $primaryColor;
+}
+
+li{
+  border-left: 1px solid $secondaryColor;
+}
+
+.daily-pic-div{
+  background-color: $otherColor;
+  border: 4px ridge $borderColor;
+  text-align: center;
+  float:right;
+  max-width: 40%;
+  img{
+    border-top: 4px ridge $borderColor;
+    max-width: 100%;
+  }
 }
