@@ -19,7 +19,7 @@ div{
 }
 
 footer {
-position: fixed;
+position: absolute;
 bottom: 0;
 }
 
@@ -44,6 +44,7 @@ li{
   img{
     border-top: 4px ridge $borderColor;
     max-width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -61,4 +62,25 @@ li{
 
 #title{
   color: black;
+}
+
+.answer-form-div{
+  border: 1px solid $primaryColor;
+  padding: 5px;
+  background-color: $anotherColor;
+  textarea, input{
+    min-width: 100%;
+  }
+}
+
+.pic-row{
+  .pic-col{
+    max-width: 100%;
+    margin-bottom: 10px;
+    img{
+      max-width: 100%;
+      background-color: $otherColor;
+      border: 4px ridge $borderColor;
+    }
+  }
 }

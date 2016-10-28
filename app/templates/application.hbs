@@ -9,13 +9,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
           {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}}
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="nav navbar-nav">
-            {{#link-to 'about' tagName="li"}}<a href="">About!</a>{{/link-to}}
-            {{#link-to 'contact' tagName="li"}}<a href="">Contact Us!</a>{{/link-to}}
+            {{#link-to 'about' tagName="li"}}<a href="">About</a>{{/link-to}}
+            {{#link-to 'contact' tagName="li"}}<a href="">Contact Us</a>{{/link-to}}
+            {{#link-to 'photos' tagName="li"}}<a href="">Photos</a>{{/link-to}}
           </ul>
         </div>
       </div>
@@ -24,6 +26,13 @@
   {{outlet}}
   <hr>
   <footer>
-    {{#link-to 'about'}}About the team!{{/link-to}}
+
+    <p>Designed by: Matthew F Nicholas |
+      fostermatt82@gmail.com |
+      {{#link-to 'about'}}About{{/link-to}}
+      |
+      {{#link-to 'contact'}}Contact{{/link-to}}
+    </p>
+
   </footer>
 </div>
