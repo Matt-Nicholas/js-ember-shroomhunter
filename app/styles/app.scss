@@ -4,11 +4,13 @@ $primaryColor: #5F5C46;
 $secondaryColor: #E4E3DC;
 $borderColor: #EDBF85;
 $otherColor: #F8F287;
+$anotherColor: #D1CEC3;
 
 .container{
   background-color: $secondaryColor;
   min-height: 100%;
   position: relative;
+  max-width: 100%;
 }
 
 footer {
@@ -31,9 +33,19 @@ li{
   border: 4px ridge $borderColor;
   text-align: center;
   float:right;
-  max-width: 40%;
+  max-width: 100%;
+  padding: 0;
   img{
     border-top: 4px ridge $borderColor;
     max-width: 100%;
   }
+}
+
+.table-head{
+  max-width: 96%;
+  background-color: $anotherColor;
+}
+.table-data{
+  max-width: 96%;
+  
 }

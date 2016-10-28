@@ -1,12 +1,25 @@
 
 <div class="index-div">
-  <div class="daily-pic-div">
-    <h3>Daily Shroom</h3>
-    <img src="assets/images/chantrelles.JPG" alt="Chanterelles" />
+  <div class="row">
+    <div class="col-sm-8">
+        <div class="row table-head">
+          <div class="col-sm-8">
+            <h4>Topic</h4>
+          </div>
+          <div class="col-sm-2">
+            <h4>User</h4>
+          </div>
+          <div class="col-sm-2">
+            <h4>Date</h4>
+          </div>
+        </div>
+          {{#each model as |question|}}
+            {{question-tile question=question}}
+          {{/each}}
+    </div>
+    <div class="daily-pic-div col-sm-4">
+      <h3>Daily Shroom</h3>
+      <img src="assets/images/chantrelles.JPG" alt="Chanterelles" />
+    </div>
   </div>
-  <div class="message-board-div">
-    
-  </div>
-
-
 </div>
