@@ -16,6 +16,13 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyCW7cEF6ljVRYVaP-x_f8IOskRjUYwj_wo",
+      authDomain: "shroom-hunter.firebaseapp.com",
+      databaseURL: "https://shroom-hunter.firebaseio.com",
+      storageBucket: "shroom-hunter.appspot.com",
+      messagingSenderId: "970337695027"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
