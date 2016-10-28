@@ -2,20 +2,20 @@
 <div class="index-div">
   <div class="row">
     <div class="col-sm-8">
-        <div class="row table-head">
-          <div class="col-sm-8">
-            <h4>Topic</h4>
-          </div>
-          <div class="col-sm-2">
-            <h4>User</h4>
-          </div>
-          <div class="col-sm-2">
-            <h4>Date</h4>
-          </div>
+      <div class="row table-head">
+        <div class="col-sm-8">
+          <h4>Topic</h4>
         </div>
-          {{#each model.questions as |question|}}
-            {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-          {{/each}}
+        <div class="col-sm-2">
+          <h4>User</h4>
+        </div>
+        <div class="col-sm-2">
+          <h4>Date</h4>
+        </div>
+      </div>
+      {{#each model.questions as |question|}}
+      {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+      {{/each}}
     </div>
     <div class=" col-sm-4">
       <div class="daily-pic-div">

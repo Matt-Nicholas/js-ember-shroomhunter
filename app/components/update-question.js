@@ -11,7 +11,6 @@ export default Ember.Component.extend({
         content: this.get('content'),
         author: this.get('author'),
         date: this.get('date'),
-
       };
       this.set('updateQuestionForm', false);
       this.sendAction('update', question, params);

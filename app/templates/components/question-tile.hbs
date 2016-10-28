@@ -1,6 +1,6 @@
 <div class="row table-data">
   <div class="col-sm-8">
-    <h5>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h5>
+    {{#link-to 'question' question.id}}<h5 class="question-content">{{question.content}}</h5>{{/link-to}}
   </div>
   <div class="col-sm-2">
     <h5>{{question.author}}</h5>

@@ -1,5 +1,4 @@
 <h2>Shroom Hunter {{model.author}} asked</h2>
-
 <div class="row">
   <div class="col-sm-8">
     <h3>{{model.content}}</h3>
@@ -12,7 +11,7 @@
       </div>
     </div>
     {{#each model.answers as |answer|}}
-      {{answer-tile answer=answer}}
+    {{answer-tile answer=answer}}
     {{/each}}
     {{question-detail question=model destroyQuestion="destroyQuestion"}}
     {{update-question question=model update="update"}}
