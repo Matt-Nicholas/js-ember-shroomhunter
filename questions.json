@@ -10,5 +10,10 @@
   "content": "Are there false moreles?",
   "author": "Gandalf",
   "date": "09/10/2016"
-  }]
+  }],
+
+  "answers": [{
+    "author": "Matt",
+    "content": "yes!"
+    }]
 }

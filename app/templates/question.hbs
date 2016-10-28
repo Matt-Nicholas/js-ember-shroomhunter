@@ -1,4 +1,8 @@
-<h2>Shroom Hunter {{question.author}}</h2>
-<h3>{{question.content}}</h3>
+<h2>Shroom Hunter {{model.author}}</h2>
+<h3>{{model.content}}</h3>
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}
+{{new-answer saveAnswer="saveAnswer" question=model}}
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{update-question question=model update="update"}}
