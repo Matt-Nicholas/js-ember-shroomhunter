@@ -130,15 +130,14 @@ li{
   color: black;
 }
 
-.footer{
+
   .footer {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: $primaryColor;
   text-align: center;
-}
+  margin-top: 100%;
 }
