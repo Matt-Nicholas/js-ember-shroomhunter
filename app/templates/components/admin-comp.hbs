@@ -1,0 +1,14 @@
+  <button {{action 'adminLogOut'}}>Log Out</button>
+  <form  {{action 'adminLogIn' on="submit"}}>
+    <div class="form-group">
+      <label for="username">Username</label>
+      {{input value=username id="username" required=true}}
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      {{input value=password id="password" required=true type="password"}}
+    </div>
+    <button {{action 'adminLogIn'}} type="submit">Log In</button>
+  </form>
+  <button {{action 'displayAdminInfo'}}>Forgot username of password</button>
+<button {{action 'testLog'}} name="button"></button>
