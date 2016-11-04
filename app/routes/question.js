@@ -31,6 +31,10 @@ export default Ember.Route.extend({
     upVote(answer){
       answer.set('rating', (answer.get('rating') + 1));
       answer.save();
+    },
+    downVote(answer){
+      answer.set('rating', (answer.get('rating') - 1));
+      answer.save();
     }
   }
 });
