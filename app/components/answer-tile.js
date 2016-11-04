@@ -1,21 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
+  sortBy: ['rating:desc'],
+  sortedAnswers: Ember.computed.sort('question.answers', 'sortBy'),
 
   actions:{
     upVote(answer){
-
-      console.log(answer.rating);
-
-      var params = {
-        rating: 2,
-      }
-      this.sendAction('upVote', answer, params);
+      this.sendAction('upVote', answer);
     },
     downVote(answer){
-      answer.rating -= 1;
-      console.log(answer);
+      this.sendAction('downVote', answer);
 
     }
   }

@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   adminServices: Ember.inject.service(),
 
-
   model(params){
     return this.store.findRecord('question', params.question_id);
   },
@@ -29,7 +28,7 @@ export default Ember.Route.extend({
         return question.save();
       });
     },
-    upVote(answer, params){
+    upVote(answer){
       answer.set('rating', (answer.get('rating') + 1));
       answer.save();
     }

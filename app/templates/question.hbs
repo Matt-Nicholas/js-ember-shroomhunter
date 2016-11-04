@@ -10,9 +10,9 @@
         <h5>Answer</h5>
       </div>
     </div>
-    {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer upVote='upVote'}}
-    {{/each}}
+
+      {{answer-tile question=model upVote='upVote'}}
+
 
   </div>
   <div class="col-sm-4">
