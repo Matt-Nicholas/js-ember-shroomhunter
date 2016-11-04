@@ -6,6 +6,10 @@ export default Ember.Route.extend({
 
 
   model(){
+    if(!this.get('adminServices').loggedIn){
+      var email = prompt("Enter your email to join our mailing list");
+    }
+
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
       answers: this.store.findAll('answer')

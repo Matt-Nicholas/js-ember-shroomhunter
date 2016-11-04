@@ -28,6 +28,10 @@ export default Ember.Route.extend({
       newAnswer.save().then(function() {
         return question.save();
       });
+    },
+    upVote(answer, params){
+      answer.set('rating', (answer.get('rating') + 1));
+      answer.save();
     }
   }
 });

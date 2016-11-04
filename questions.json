@@ -14,6 +14,7 @@
 
   "answers": [{
     "author": "Matt",
-    "content": "yes!"
+    "content": "yes!",
+    "rating": 1
     }]
 }

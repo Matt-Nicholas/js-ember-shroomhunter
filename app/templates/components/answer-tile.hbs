@@ -1,8 +1,13 @@
 <div class="answer-div row">
   <div class="col-md-2">
     <h6>{{answer.author}}</h6>
+    <h6>{{answer.rating}}</h6>
   </div>
-  <div class="col-md-10">
+  <div class="col-md-9">
     <p>{{answer.content}}</p>
+  </div>
+  <div class="col-md-1">
+    <button {{action 'upVote' answer}} name="button">Up</button>
+    <button {{action 'downVote' answer}} name="button">Down</button>
   </div>
 </div>
