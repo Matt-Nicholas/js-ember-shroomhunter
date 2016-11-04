@@ -13,10 +13,11 @@
     {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
     {{/each}}
-    {{question-detail question=model destroyQuestion="destroyQuestion"}}
-    {{update-question question=model update="update"}}
+
   </div>
   <div class="col-sm-4">
     {{new-answer saveAnswer="saveAnswer" question=model}}
   </div>
 </div>
+{{admin-question}}
+<button {{action 'testing'}} name="button"></button>

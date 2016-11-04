@@ -1,4 +1,6 @@
+{{#if adminServices.loggedIn}}
   <button {{action 'adminLogOut'}}>Log Out</button>
+{{else}}
   <form  {{action 'adminLogIn' on="submit"}}>
     <div class="form-group">
       <label for="username">Username</label>
@@ -10,5 +12,6 @@
     </div>
     <button {{action 'adminLogIn'}} type="submit">Log In</button>
   </form>
-  <button {{action 'displayAdminInfo'}}>Forgot username of password</button>
-<button {{action 'testLog'}} name="button"></button>
+  <button {{action adminServices.displayAdminInfo}}>Forgot username of password</button>
+  <button {{action 'testLog'}} name="button">test</button>
+{{/if}}
