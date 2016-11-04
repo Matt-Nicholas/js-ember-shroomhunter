@@ -13,7 +13,7 @@ div{
 
 .container{
   background-color: $secondaryColor;
-  min-height: 1000px;
+  min-height: 1050px;
   position: relative;
   max-width: 100%;
 }
@@ -37,6 +37,8 @@ body {
   background-color: $primaryColor;
   border: 4px solid $primaryColor;
   border-radius: 2px;
+  box-shadow: -5px -5px 5px black;
+  border: 1px solid black;
 }
 
 li{
@@ -63,6 +65,7 @@ li{
   max-width: 96%;
   background-color: $anotherColor;
   margin-left: 2%;
+  border: 1px solid black;
 }
 
 .table-data{
@@ -131,12 +134,11 @@ li{
 }
 
 .footer {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   background-color: $primaryColor;
   text-align: center;
-  margin-top: 100%;
+  margin-top: 50px;
 }
