@@ -19,5 +19,7 @@
     {{new-answer saveAnswer="saveAnswer" question=model}}
   </div>
 </div>
-{{admin-question}}
+<!-- {{admin-question update='update' question=question params=params}} -->
+{{question-detail question=model destroyQuestion="destroyQuestion"}}
+{{update-question question=model update='update'}}
 <button {{action 'testing'}} name="button"></button>
