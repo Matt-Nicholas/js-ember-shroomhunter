@@ -3,8 +3,8 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   adminServices: Ember.inject.service('admin-services'),
 
-
   updateQuestionForm: false,
+
   actions: {
     updateQuestionForm() {
       this.set('updateQuestionForm', true);

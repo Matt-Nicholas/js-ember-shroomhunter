@@ -10,16 +10,11 @@
         <h5>Answer</h5>
       </div>
     </div>
-
       {{answer-tile question=model upVote='upVote' downVote='downVote'}}
-
-
   </div>
   <div class="col-sm-4">
     {{new-answer saveAnswer="saveAnswer" question=model}}
   </div>
 </div>
-<!-- {{admin-question update='update' question=question params=params}} -->
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{update-question question=model update='update'}}
-<button {{action 'testing'}} name="button"></button>
