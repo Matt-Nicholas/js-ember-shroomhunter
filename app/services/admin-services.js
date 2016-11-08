@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
 
-  loggedIn: true,
+  loggedIn: false,
   adminUsername: 'fungus',
   adminPassword: 'amungus',
 

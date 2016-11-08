@@ -1,13 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  promptedForEmail: false,
   adminServices: Ember.inject.service(),
 
-
-
   model(){
-    if(!this.get('adminServices').loggedIn){
+    if(!this.get('adminServices').loggedIn && this.promptedForEmail === false){
       var email = prompt("Enter your email to join our mailing list");
+      this.promptedForEmail = true
     }
 
     return Ember.RSVP.hash({
